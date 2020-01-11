@@ -2,9 +2,13 @@
   <div id="app">
     <v-app>
       <v-content>
-        <v-container fluid>
           <Greeting/>
-        </v-container>
+
+          <v-container fluid fill-height></v-container>
+
+          <Info style="position: fixed; top: 0;"/>
+
+          <v-container fluid fill-height style="background-color: #fc4850;"></v-container>
       </v-content>
     </v-app>
   </div>
@@ -12,10 +16,12 @@
 
 <script>
   import Greeting from './components/app/Greeting'
+  import Info from './components/app/Info'
   export default {
     name: "App",
     components: {
-      Greeting
+      Greeting,
+      Info
     }
   };
 </script>
@@ -30,12 +36,16 @@
   }
 
   .btn-shadow {
-    box-shadow: 0px 2px 12px rgba(100, 100, 100, 0.2);
+    box-shadow: 0px 2px 8px rgba(100, 100, 100, 0.2);
     margin: 5px;
   }
 
   .shadow {
     box-shadow: 0px 2px 12px rgba(100, 100, 100, 0.2);
+  }
+
+  .shadow-none {
+    box-shadow: none;
   }
 
   .ba-2 {
