@@ -2,18 +2,20 @@
   <div id="app">
     <v-app>
       <v-content>
-        <Presentation/>
+        <v-container fluid>
+          <Greeting/>
+        </v-container>
       </v-content>
     </v-app>
   </div>
 </template>
 
 <script>
-  import Presentation from './components/app/Presentation'
+  import Greeting from './components/app/Greeting'
   export default {
     name: "App",
     components: {
-      Presentation
+      Greeting
     }
   };
 </script>
@@ -21,10 +23,6 @@
 <style>
   #app {
     font-family: "Varela Round", sans-serif;
-  }
-
-  html {
-    overflow: hidden;
   }
 
   .active {
@@ -39,4 +37,9 @@
   .shadow {
     box-shadow: 0px 2px 12px rgba(100, 100, 100, 0.2);
   }
+
+  .ba-2 {
+    border: 2px solid #ffffff;
+  }
+  
 </style>
