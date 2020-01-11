@@ -18,7 +18,7 @@
             <v-row align="center" justify="center">
                 <v-col cols="12">
                     <v-row align="center" justify="center">
-                        <v-avatar size="250" class="upTop">
+                        <v-avatar size="250" class="upTop pointer">
                             <promoIcon width="250" height="250" />
                         </v-avatar>
                     </v-row>
@@ -38,12 +38,14 @@
     import fillIcon from "../icons/fillIcon"
     import wifindIcon from "../icons/wifindIcon"
     import promoIcon from '../icons/promoIcon'
+    import closeIcon from '../icons/closeIcon'
     export default {
         name: 'Greeting',
         components: {
             fillIcon,
             wifindIcon,
-            promoIcon
+            promoIcon,
+            closeIcon
         }
     }
 </script>
@@ -68,7 +70,11 @@
         width: 100%;
         height: 50vh;
         background-color: #fc4850;
-        z-index: 1;
+        z-index: 2;
+    }
+
+    .pointer:hover {
+        cursor: pointer;
     }
 
     .styled {
