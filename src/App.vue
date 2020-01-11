@@ -41,5 +41,8 @@
   .ba-2 {
     border: 2px solid #ffffff;
   }
-  
+
+  .upTop {
+    z-index: 2;
+  }
 </style>
