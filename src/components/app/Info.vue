@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid fill-height>
+    <v-container fluid fill-height style="position: fixed; top: 0;">
         <v-row>
             <div class="appBarStyled ml-3">
                 <titleInfoIcon width="160" height="68" />

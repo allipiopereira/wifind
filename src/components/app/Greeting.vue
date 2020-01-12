@@ -2,7 +2,7 @@
     <v-container fluid fill-height>
         <v-row>
             <div class="redBack"></div>
-            <fillIcon class="styled" style="z-index: 1;" />
+            <fillIcon class="styledFillIcon" style="z-index: 1;" />
 
             <div class="appBarStyled">
                 <div class="ml-3">
@@ -19,7 +19,7 @@
                 <v-col cols="12">
                     <v-row align="center" justify="center">
                         <v-avatar size="250" class="upTop pointer">
-                            <promoIcon width="250" height="250" />
+                            <planoStartIcon color="#000000" width="250" height="250" />
                         </v-avatar>
                     </v-row>
                 </v-col>
@@ -37,14 +37,14 @@
 <script>
     import fillIcon from "../icons/fillIcon"
     import wifindIcon from "../icons/wifindIcon"
-    import promoIcon from '../icons/promoIcon'
+    import planoStartIcon from '../icons/planoStartIcon'
     import closeIcon from '../icons/closeIcon'
     export default {
         name: 'Greeting',
         components: {
             fillIcon,
             wifindIcon,
-            promoIcon,
+            planoStartIcon,
             closeIcon
         }
     }
@@ -77,7 +77,7 @@
         cursor: pointer;
     }
 
-    .styled {
+    .styledFillIcon {
         position: absolute;
         top: -10rem;
         left: -4%;
@@ -85,7 +85,7 @@
     }
 
     @media (max-width: 980px) {
-        .styled {
+        .styledFillIcon {
             position: absolute;
             top: -10%;
         }

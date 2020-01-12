@@ -2,13 +2,15 @@
   <div id="app">
     <v-app>
       <v-content>
-          <Greeting/>
+        <Greeting />
 
-          <v-container fluid fill-height></v-container>
+        <v-container fluid fill-height></v-container>
 
-          <Info style="position: fixed; top: 0;"/>
+        <Info />
 
-          <v-container fluid fill-height style="background-color: #fc4850;"></v-container>
+        <v-container fluid fill-height style="background-color: #fc4850;"></v-container>
+
+        <Planos />
       </v-content>
     </v-app>
   </div>
@@ -17,11 +19,13 @@
 <script>
   import Greeting from './components/app/Greeting'
   import Info from './components/app/Info'
+  import Planos from './components/app/Planos'
   export default {
     name: "App",
     components: {
       Greeting,
-      Info
+      Info,
+      Planos
     }
   };
 </script>
