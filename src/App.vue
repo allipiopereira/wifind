@@ -3,18 +3,14 @@
     <v-app>
       <v-content>
         <Greeting />
-
         <v-container fluid fill-height></v-container>
-
         <Info />
-
         <v-container fluid fill-height style="background-color: #fc4850;"></v-container>
-
         <Planos />
-
         <v-container fluid fill-height></v-container>
-
         <FibraPremium />
+        <v-container fluid fill-height></v-container>
+        <End />
       </v-content>
     </v-app>
   </div>
@@ -25,13 +21,15 @@
   import Info from './components/app/Info'
   import Planos from './components/app/Planos'
   import FibraPremium from './components/app/FibraPremium'
+  import End from './components/app/End'
   export default {
     name: "App",
     components: {
       Greeting,
       Info,
       Planos,
-      FibraPremium
+      FibraPremium,
+      End
     }
   };
 </script>
