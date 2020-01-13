@@ -21,18 +21,19 @@
           <v-container>
             <v-form v-model="valid" ref="form" lazy-validation>
               <v-row>
-                <v-col cols="12" sm="6" md="6">
+                <v-col cols="12" sm="6" md="6" class="my-0 py-0">
                   <span>Primeiro nome</span>
                   <v-text-field label="Adicione seu nome*" solo v-model="firstName" required hint="Requerido"
                     style="border-radius: 15px;" :rules="firstNameRules"></v-text-field>
                 </v-col>
-                <v-col cols="12" sm="6" md="6">
+
+                <v-col cols="12" sm="6" md="6" class="my-0 py-0">
                   <span>Sobrenome</span>
                   <v-text-field label="Adicione seu sobrenome" solo v-model="lastName" hint="Opcional"
                     style="border-radius: 15px;" :rules="lastNameRules"></v-text-field>
                 </v-col>
 
-                <v-col cols="12" sm="12">
+                <v-col cols="12" sm="12" class="my-0 py-0">
                   <span>Edite sua mensagem</span>
                   <v-textarea solo v-model="msg" :msgEdit="msgEdit" label="Adicione sua mensagem"
                     style="border-radius: 15px;" :rules="msgRules"></v-textarea>
@@ -57,7 +58,7 @@
         </v-card-actions>
 
         <v-snackbar v-if="!valid" :value="snackbarInfo" color="perfect" bottom right>
-          Verifique sua mensagem para prosseguir!
+          {{snackbarInfoText}}
           <opsIcon width="40" height="40" class="mt-1 ml-3" />
         </v-snackbar>
 
@@ -89,6 +90,7 @@
         dialogMessage: false,
         snackbarInfo: true,
         snackbarSend: false,
+        snackbarInfoText: 'Verifique sua mensagem para prosseguir!',
         firstName: 'Usário',
         lastName: '',
         msg: '',
@@ -108,6 +110,17 @@
           if (username.length === 2) { this.lastName = username[1] }
         } catch (e) {
           localStorage.removeItem("username");
+        }
+      }
+    },
+    watch: {
+      lastName() {
+        if (this.firstName.toLowerCase() == this.lastName.toLowerCase()) {
+          this.valid = false
+          this.snackbarInfoText = 'Ops, Primeiro nome e Sobrenome se  repetem...'
+        } else {
+          this.valid = true
+          this.snackbarInfoText = 'Verifique sua mensagem para prosseguir!'
         }
       }
     },
