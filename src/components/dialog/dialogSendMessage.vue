@@ -2,7 +2,7 @@
   <v-row justify="center">
     <v-dialog v-model="dialogMessage" persistent max-width="600px">
       <template v-slot:activator="{ on }">
-        <v-btn v-if="fixed"  fab small fixed absolute top right color="perfect" class="shadow-none mr-4" v-on="on" estyle="margin-top: 3rem; z-index: 0;"></v-btn>
+        <v-btn v-if="fixed"  fab small fixed absolute top right color="perfect" class="shadow-none mr-4" v-on="on" style="margin-top: 3rem; z-index: 0;"></v-btn>
 
         <v-btn v-else  icon size="20" v-on="on">
           <v-icon color="white">mdi-whatsapp</v-icon>
