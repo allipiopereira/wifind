@@ -11,6 +11,8 @@
         <FibraPremium />
         <v-container fluid fill-height></v-container>
         <End />
+
+        <dialogSendMessage :fixed="true"/>
       </v-content>
     </v-app>
   </div>
@@ -22,6 +24,7 @@
   import Planos from './components/app/Planos'
   import FibraPremium from './components/app/FibraPremium'
   import End from './components/app/End'
+  import dialogSendMessage from './components/dialog/dialogSendMessage'
   export default {
     name: "App",
     components: {
@@ -29,7 +32,8 @@
       Info,
       Planos,
       FibraPremium,
-      End
+      End,
+      dialogSendMessage
     }
   };
 </script>

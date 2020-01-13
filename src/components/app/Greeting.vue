@@ -11,7 +11,7 @@
                 <v-spacer></v-spacer>
                 <v-btn text rounded class="mr-3 pl-5 pr-5 ba-2 upTop">Planos</v-btn>
                 <v-btn icon color="perfect" class="mr-3 ba-2 upTop">
-                    <dialogSendMessage />
+                    <dialogSendMessage :fixed="false" />
                 </v-btn>
             </div>
 

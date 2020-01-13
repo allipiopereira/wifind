@@ -4,9 +4,6 @@
             <div class="appBarStyled ml-3">
                 <titleInfoIcon width="160" height="68" />
                 <v-spacer></v-spacer>
-                <v-btn icon color="perfect" class="mr-3 ba-2" style="background-color: #fc4850; box-shadow: none;">
-                    <v-icon color="black">mdi-whatsapp</v-icon>
-                </v-btn>
             </div>
 
             <v-row align="center" justify="center">
