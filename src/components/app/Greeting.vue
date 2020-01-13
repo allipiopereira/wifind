@@ -11,7 +11,7 @@
                 <v-spacer></v-spacer>
                 <v-btn text rounded class="mr-3 pl-5 pr-5 ba-2 upTop">Planos</v-btn>
                 <v-btn icon color="perfect" class="mr-3 ba-2 upTop">
-                    <v-icon color="black">mdi-whatsapp</v-icon>
+                    <dialogSendMessage />
                 </v-btn>
             </div>
 
@@ -39,13 +39,15 @@
     import wifindIcon from "../icons/wifindIcon"
     import planoStartIcon from '../icons/planoStartIcon'
     import closeIcon from '../icons/closeIcon'
+    import dialogSendMessage from '../dialog/dialogSendMessage'
     export default {
         name: 'Greeting',
         components: {
             fillIcon,
             wifindIcon,
             planoStartIcon,
-            closeIcon
+            closeIcon,
+            dialogSendMessage
         },
         data() {
             return {
