@@ -185,7 +185,6 @@
                     type: 'Plano Start',
                     title: 'Plano Start - 10 MEGA',
                     price: 'R$64,90',
-                    url: '/plano-start',
                     slogan: 'Começe dando start nas vantagens...',
                     ratingNice: true
                 },
@@ -194,7 +193,6 @@
                         type: 'Plano Start',
                         title: 'Plano Start - 10 MEGA',
                         price: 'R$64,90',
-                        url: '/plano-start',
                         slogan: 'Começe dando start nas vantagens...',
                         ratingNice: true
                     },
@@ -202,7 +200,6 @@
                         type: 'Plano Full',
                         title: 'Plano Full - 30 MEGA',
                         price: 'R$99,99',
-                        url: '/plano-full',
                         slogan: 'Avançe o suficiente nas maratonas...',
                         ratingNice: false
                     },
@@ -210,7 +207,6 @@
                         type: 'Plano Master',
                         title: 'Plano Master - 50 MEGA',
                         price: 'R$137,70',
-                        url: '/plano-master',
                         slogan: 'Tenha velocidade master na sua equipe...',
                         ratingNice: false
                     },
@@ -218,7 +214,6 @@
                         type: 'Plano Premium',
                         title: 'Plano Premium - 100 MEGA',
                         price: 'R$159,90',
-                        url: '/plano-premium',
                         slogan: 'Supere todas as barreiras...',
                         ratingNice: false
                     },
@@ -233,7 +228,6 @@
                             type: 'Plano Start',
                             title: 'Plano Start - 10 MEGA',
                             price: 'R$64,90',
-                            url: '/plano-start',
                             slogan: 'Começe dando start nas vantagens...',
                             ratingNice: true
                         }
