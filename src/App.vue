@@ -1,40 +1,14 @@
 <template>
   <div id="app">
     <v-app>
-      <v-content>
-        <Greeting />
-        <v-container fluid fill-height></v-container>
-        <Info />
-        <v-container fluid fill-height style="background-color: #fc4850;"></v-container>
-        <Planos />
-        <v-container fluid fill-height></v-container>
-        <FibraPremium />
-        <v-container fluid fill-height></v-container>
-        <End />
-
-        <dialogSendMessage :fixed="true"/>
-      </v-content>
+      <router-view></router-view>
     </v-app>
   </div>
 </template>
 
 <script>
-  import Greeting from './components/app/Greeting'
-  import Info from './components/app/Info'
-  import Planos from './components/app/Planos'
-  import FibraPremium from './components/app/FibraPremium'
-  import End from './components/app/End'
-  import dialogSendMessage from './components/dialog/dialogSendMessage'
   export default {
-    name: "App",
-    components: {
-      Greeting,
-      Info,
-      Planos,
-      FibraPremium,
-      End,
-      dialogSendMessage
-    }
+    name: "App"
   };
 </script>
 

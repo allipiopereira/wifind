@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import Typer from "vue-typer";
 import App from "./App.vue";
+import router from './routes'
 import "vuetify/dist/vuetify.css";
 
 Vue.config.productionTip = false;
@@ -9,6 +10,7 @@ Vue.use(Vuetify);
 Vue.use(Typer);
 
 new Vue({
+  router,
   vuetify: new Vuetify({
     theme: {
       themes: {

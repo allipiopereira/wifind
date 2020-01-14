@@ -2,7 +2,8 @@
     <v-row align="center" justify="center">
         <v-dialog v-model="dialogContratar" max-width="290">
             <template v-slot:activator="{ on }">
-                <v-btn rounded v-on="on" color="#000" class="px-5 shadow-none ba-dashed-1" style="background-color: #fc4850;">
+                <v-btn rounded v-on="on" color="#000" class="px-5 shadow-none ba-dashed-1"
+                    style="background-color: #fc4850;">
                     Contratar
                 </v-btn>
             </template>
@@ -31,6 +32,15 @@
         data() {
             return {
                 dialogContratar: false
+            }
+        },
+        watch: {
+            dialogContratar(value) {
+                if (value) {
+                    setTimeout(() => {
+                        this.$router.push('/' + this.$props.plano.type.toLowerCase().replace(" ", "-"))
+                    }, 5000);
+                }
             }
         }
     }

@@ -16,9 +16,10 @@
             </div>
 
             <v-row align="center" justify="center">
-                <v-col cols="12">
+                <v-col cols="12" class="my-0 py-0">
                     <v-row align="center" justify="center">
-                        <v-avatar size="250" class="upTop pointer" @click.native.stop="dialogConfirm = !dialogConfirm">
+                        <v-avatar size="250" class="upTop pointer ml-4"
+                            @click.native.stop="dialogConfirm = !dialogConfirm">
                             <planoStartIcon color="#000000" width="250" height="250" />
                         </v-avatar>
                     </v-row>
@@ -74,7 +75,7 @@
                                                 <v-btn icon class="ma-2" v-on="on"
                                                     @click="viewListPlanos = !viewListPlanos"
                                                     style="background-color: #ffffff;">
-                                                    <addIcon width="20" height="20" color="#fc4850" class="mt-1" />
+                                                    <checkIcon width="20" height="20" color="#fc4850" class="mt-1" />
                                                 </v-btn>
                                             </template>
                                             <span>Selecionado!</span>
@@ -150,6 +151,7 @@
     import wifindIcon from "../icons/wifindIcon"
     import planoStartIcon from '../icons/planoStartIcon'
     import closeIcon from '../icons/closeIcon'
+    import checkIcon from '../icons/checkIcon'
     import addIcon from '../icons/addIcon'
     import arrowLeftIcon from '../icons/arrowLeftIcon'
     import starsNiceIcon from '../icons/starsNiceIcon'
@@ -165,6 +167,7 @@
             wifindIcon,
             planoStartIcon,
             closeIcon,
+            checkIcon,
             addIcon,
             arrowLeftIcon,
             starsNiceIcon,
@@ -220,6 +223,22 @@
                         ratingNice: false
                     },
                 ]
+            }
+        },
+        watch: {
+            dialogConfirm(value) {
+                if (!value) {
+                    setTimeout(() => {
+                        this.selectedPlano = {
+                            type: 'Plano Start',
+                            title: 'Plano Start - 10 MEGA',
+                            price: 'R$64,90',
+                            url: '/plano-start',
+                            slogan: 'Começe dando start nas vantagens...',
+                            ratingNice: true
+                        }
+                    }, 1000)
+                }
             }
         },
         methods: {

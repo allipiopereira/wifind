@@ -10,8 +10,8 @@
                 <v-card-title class="font-weight-regular">
                     {{plano.title}}
                     <v-spacer></v-spacer>
-                    <v-btn icon color="white" @click="dialogInfo = !dialogInfo" class="ba-1">
-                        <closeIcon width="20" height="20" color="#fc4850" class="mt-1" />
+                    <v-btn icon large color="white" @click="dialogInfo = !dialogInfo">
+                        <closeInfoIcon width="43" height="43" color="#fc4850" />
                     </v-btn>
                 </v-card-title>
                 <v-card-text>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    import closeIcon from '../icons/closeIcon'
+    import closeInfoIcon from '../icons/closeInfoIcon'
     export default {
         name: 'dialogPriceInfo',
         props: {
@@ -33,7 +33,7 @@
             }
         },
         components: {
-            closeIcon
+            closeInfoIcon
         },
         data() {
             return {
