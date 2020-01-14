@@ -52,8 +52,14 @@
     margin: 5px;
   }
 
-  .shadow {
+  .shadow-start {
     box-shadow: 0px 2px 12px rgba(100, 100, 100, 0.2);
+  }
+
+  .shadow-master {
+    box-shadow: 0px 3px 18px -1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 18px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.14);
   }
 
   .shadow-none {
