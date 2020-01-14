@@ -43,9 +43,9 @@
 
                     <v-spacer></v-spacer>
 
-                    <v-btn rounded color="perfect" class="mr-7 pl-5 pr-5 shadow-none" style="height: 30px;">
-                        <span style="color: #fff;">Contratar</span>
-                    </v-btn>
+                    <div class="mr-8">
+                        <dialogContratarPlano :plano="selectedPlano" />
+                    </div>
                 </div>
 
                 <div class="centered">
@@ -155,6 +155,7 @@
     import starsNiceIcon from '../icons/starsNiceIcon'
     import starsTopIcon from '../icons/starsTopIcon'
     import dialogPriceInfo from '../dialog/dialogPriceInfo'
+    import dialogContratarPlano from '../dialog/dialogContratarPlano'
     import dialogSendMessage from '../dialog/dialogSendMessage'
 
     export default {
@@ -169,6 +170,7 @@
             starsNiceIcon,
             starsTopIcon,
             dialogPriceInfo,
+            dialogContratarPlano,
             dialogSendMessage
         },
         data() {

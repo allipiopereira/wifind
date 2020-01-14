@@ -70,6 +70,10 @@
     border: 2px solid #ffffff;
   }
 
+  .ba-dashed-1 {
+    border: 1px dashed #000;
+  }
+
   .upTop {
     z-index: 2;
   }
